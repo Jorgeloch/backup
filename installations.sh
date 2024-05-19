@@ -39,3 +39,10 @@ asdf plugin-add crystal https://github.com/asdf-community/asdf-crystal.git
 asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
 asdf plugin-add java https://github.com/halcyon/asdf-java.git
 
+echo "Now lets setup our dotfiles"
+
+git clone git clone https://github.com/Jorgeloch/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
+make all
+
+echo "Now you are ready to go!"
